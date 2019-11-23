@@ -1,0 +1,6 @@
+export default {
+  APP: 'APP',
+  STATIONS: 'STATIONS',
+  TRACKING: 'TRACKING',
+  STATIONS_LISTING: 'STATIONS_LISTING',
+};
