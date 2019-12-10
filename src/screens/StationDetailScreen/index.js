@@ -94,10 +94,12 @@ export default class StationDetailsScreen extends Component {
 
   renderStart = () => {
     const {fromStation, toStation} = this.state;
+    const {navigation} = this.props;
+
     return (
       <View style={[{width: '80%', margin: 10, alignSelf: 'center'}]}>
         <Button
-          onPress={() => {}}
+          onPress={() => navigation.navigate(routes.TRACKING)}
           title="Start"
           color="#00B0FF"
           disabled={!fromStation || !toStation}
